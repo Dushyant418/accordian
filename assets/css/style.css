@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url(./root.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.ff {
+    font-family: Inter;
+}
+
+.fw {
+    font-weight: 400;
+}
+
+.pb-43 {
+    padding-bottom: 43px;
+}
+
+.accordian-box {
+    width: 550px;
+    display: flex;
+    padding: 24px 21px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    background: var(--white-);
+    box-shadow: 0px 11px 44px -10px rgba(0, 0, 0, 0.25);
+}
+
+.accordian_item {
+    height: 60px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid var(--lightgray-);
+    padding: 18px;
+}
+
+.accordian_header {
+    cursor: pointer;
+}
+
+.accordian_item.active {
+    border-color: var(--blue-);
+    height: unset;
+}
+
+.accordian_item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.accordian_item.active .bold {
+    color: var(--black-);
+}
